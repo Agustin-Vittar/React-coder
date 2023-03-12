@@ -1,10 +1,15 @@
 .containerNavbar {
     width: 100%;
     height: 10vh;
-    background-color: blanchedalmond;
+    background-color: #0b0b29;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.containerNavbar img{
+    height: 80px;
+    width: 100%;
 }
 
 .containerList {
@@ -17,5 +22,5 @@
 
 .containerList a {
     text-decoration: none;
-    color: rgb(255, 166, 0);
+    color: white;
 }

@@ -2,20 +2,41 @@
 import CartWidget from "../CartWidget/CartWidget";
 import styles from "./Navbar.module.css";
 
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+
+
+const Navbar = ({children}) => {
   return (
     <div className= {styles.containerNavbar}>
-      <img src="https://res.cloudinary.com/djiasfflw/image/upload/v1677100398/Proyecto%20React/15478137_5631157_r4j5af.jpg" alt="Logo" style={{width: "5%"}}/>
+      <Link to="/">
+        <div>
+          <img src="https://res.cloudinary.com/djiasfflw/image/upload/v1678459845/Proyecto%20React/GAMING_STORE_oscuwr.png" alt="Logo"/>
+        </div>
+      </Link>
       <ul className= {styles.containerList}>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
+        <Link to="/">
+          Colección
+        </Link>
+        <Link to="/category/accion">
+          Acción
+        </Link>
+        <Link to="/category/fantasia">
+          Fantasía
+        </Link>
+        <Link to="/category/supervivencia">
+          Supervivencia
+        </Link>
       </ul>
-      <div>
-        <h3 style={ {padding: "10px", color: "rgb(255, 166, 0)"} }>Carrito</h3>
-        <CartWidget/>
-      </div>
+      <Link to="/cart">
+        <div>
+          <h3 style={ {padding: "10px", color: "white"} }>Carrito</h3>
+          <CartWidget/>
+        </div> 
+      </Link>
+        
+      
+       {children}
       
     </div>
   )
