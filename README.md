@@ -1,5 +1,7 @@
 !["Logo del E-commerce"](https://res.cloudinary.com/djiasfflw/image/upload/v1678459845/Proyecto%20React/GAMING_STORE_oscuwr.png)
 
+[Link del gif](https://drive.google.com/file/d/1CFVBJL6tWDvldFAhyUPZTIHJLoVQUgFk/view?usp=share_link)
+
 # GAMING STORE
 ## PROYECTO ELABORADO POR AGUSTÍN VITTAR
 
