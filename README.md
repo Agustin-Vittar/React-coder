@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+!["Logo del E-commerce"](https://res.cloudinary.com/djiasfflw/image/upload/v1678459845/Proyecto%20React/GAMING_STORE_oscuwr.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GAMING STORE
+## PROYECTO ELABORADO POR AGUSTÍN VITTAR
+
+### E-commerce de video juegos
 
 ## Available Scripts
 

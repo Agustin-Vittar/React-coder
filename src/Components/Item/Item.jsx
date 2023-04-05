@@ -11,37 +11,41 @@ import { Link } from "react-router-dom";
 const Item = ( {element} ) => {
   return (
     
-    <Card
+      <Card
       sx={{
         width: 345,
-        height: 435,
+        height: 370,
         backgroundColor: "black",
-        color: "white",
+        color: "#eb6ad59a",
         border: "1px solid black",
         borderRadius: "10px",
-        boxShadow: "0px 0px 10px black"
+        boxShadow: "0px 0px 10px #eb6ad59a"
       }}
     >
       <CardMedia
-        sx={{ height: 160, backgroundColor: "whitesmoke" }}
+        sx={{ height: 160}}
         image={element.img}
         title={element.title}
       />
-      <CardContent sx={{ height: 130 }}>
+      <CardContent sx={{textAlign: "center" }}>
         <Typography gutterBottom variant="h5" component="div" align="center">
           {element.title}
         </Typography>
-        <Typography variant="body2">{element.description}</Typography>
         <Typography variant="body">Precio: ${element.price}</Typography>
       </CardContent>
       <CardActions >
-        <Link to={`/itemDetail/${element.id}`}>
-          <Button size="small" variant="contained" color="primary" style={{marginTop: "90px"}}>
-            Ver detalle
-          </Button>
-        </Link>
+        <div style={{width: "100%", display: "flex", justifyContent: "center", marginTop: "60px"}}>
+          <Link style={{textDecoration: "none"}} to={`/itemDetail/${element.id}`}>
+            <Button size="small" variant="contained" color="secondary" >
+              Ver detalle
+            </Button>
+          </Link>
+        </div>
+        
       </CardActions>
     </Card>
+    
+    
   );
   
 }

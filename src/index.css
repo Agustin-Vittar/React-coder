@@ -9,6 +9,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-image: url(https://res.cloudinary.com/djiasfflw/image/upload/v1680471445/58670_ehrh7y.jpg);
+  background-size: cover;
+  background-position: 50% 50%;  
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
